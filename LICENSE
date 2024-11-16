@@ -1,4 +1,18 @@
-                                 Apache License
+ let batch = throughBatch(4, (obj) => {
+    obj['_foo'] = 'bar';
+    return obj;
+});const const throughBatch = require('through-batch');
+let batch = throughBatch(size, transform);
+const JSONStream = require('JSONStream')
+      batch = require('through-batch'),
+      fs = require('fs');
+
+
+fs.createReadStream('objects.json')
+  .pipe(JSONStream.parse('*'))
+  .pipe(batch(4))
+  .pipe(JSONStream.stringify())
+  .pipe(fs.createWriteStream('batchedObjects.json'));$ npm install through-batch                                Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
