@@ -9,7 +9,7 @@ import mockfs from 'mock-fs';
 
 import { Headers } from 'node-fetch';
 import { HttpMethod } from '.';
-import { assertRequestAgentsEqual, assertRequestOptionsEqual } from '../test/match-buffer';
+import { assertRequestAgentsEqual, assertRequestOptionsEqual } from './test/match-buffer';
 import { CoreV1Api, RequestContext } from './api';
 import { bufferFromFileOrString, findHomeDir, findObject, KubeConfig, makeAbsolutePath } from './config';
 import { ActionOnInvalid, Cluster, newClusters, newContexts, newUsers, User } from './config_types';
