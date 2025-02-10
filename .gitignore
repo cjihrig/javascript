@@ -12,5 +12,4 @@ examples/package-lock.json
 kubernetes-client-node-*.tgz
 **/*.swp
 .idea/
-docs/*
 .DS_Store
